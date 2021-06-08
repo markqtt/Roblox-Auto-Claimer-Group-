@@ -1,6 +1,7 @@
 import asyncio
+import os
 from roblox_py import Client
-cookie = "your_cookie_here"
+cookie = os.environ['cookie']
 client = Client(cookies=cookie)
 async def main():
     auth_user = await client.get_auth_user()
